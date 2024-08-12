@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conciertos+</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="header">
+        <span id="signup-tab" class="tab active">SIGN UP</span>
+        <span id="vip-tab" class="tab">VIP</span>
+      </div>
+      <div class="content">
+        <p id="form-description">
+          Complete los siguientes campos para crear su cuenta regular, considere
+          que a este tipo de cuenta se le asigna un nombre de usuario.
+        </p>
+        <form id="signup-form" class="form active">
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingresa tu correo"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">Acepto los términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn">SIGN UP</button>
+        </form>
+
+        <form id="vip-form" class="form">
+          <input
+            type="text"
+            id="username"
+            placeholder="Ingrese su nombre de usuario"
+            required
+          />
+          <input
+            type="email"
+            id="vip-email"
+            placeholder="Ingrese su correo"
+            required
+          />
+          <input
+            type="password"
+            id="vip-password"
+            placeholder="Ingrese su contraseña"
+            required
+          />
+          <div class="checkbox-container">
+            <input type="checkbox" id="vip-terms" required />
+            <label for="vip-terms">Acepto los términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn vip-btn">SIGN UP</button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

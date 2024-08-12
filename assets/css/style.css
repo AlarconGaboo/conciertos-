@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/concierto1.webp'); /* Agrega la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Translucido negro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    color: black;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 3px solid blue;
+}
+
+.tab.active {
+    color: white;
+    border-color: yellow;
+}
+
+.tab:hover {
+    color: white;
+    border-color: yellow;
+}
+
+.content {
+    color: white;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.form.active {
+    display: flex;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucido negro */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vip-btn {
+    background-color: yellow;
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
